@@ -18,6 +18,25 @@
     <p id="detail-rating"></p>
     <p id="detail-comment"></p>
 </div>
+<h2 id="mid-ramen">Add New Ramen</h2>
+    <form id="new-ramen">
+        <label for="new-name">Food Name:</label><br>
+        <input type="text" id="new-name" name="name" required><br>
+
+        <label for="new-restaurant">Restaurant:</label><br>
+        <input type="text" id="new-restaurant" name="Restaurant" required><br>
+
+        <label for="image">Image:</label><br>
+        <input type="text" id="food-image" name="image" required><br>
+
+        <label for="rating">Rating:</label><br>
+        <input type="number" id="food-rating" name="rating" required><br>
+
+        <label for="comment">Comments:</label><br>
+        <textarea name="comment" id="food-comment" required></textarea><br>
+
+        <button type="submit">create</button>
+    </form>
 <script src="index.js"></script>
 </body>
 </html>

@@ -61,7 +61,15 @@ function handleClick(ramen) {
     detailDiv.appendChild(comment);
 }
 
+const sec = document.getElementById("mid-ramen")
+sec.style.color = "white"
+sec.style.backgroundColor = 'black'
+sec.style.textAlign = 'center'
 
+function addSubmitListener(){
+    const form = document.getElementById("new-ramen")
+    form.style.marginLeft = '500px'
+}
 function main() {
     displayRamens(),
     handleClick();
