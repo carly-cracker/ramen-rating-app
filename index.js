@@ -45,8 +45,8 @@ function handleClick(ramen) {
     const img = document.createElement("img")
     img.src = ramen.image;
     img.alt = ramen.name;
-    img.style.width = "200px";
-    img.style.height ="200px";
+    img.style.width = "400px";
+    img.style.height ="400px";
 
     const name = document.createElement("h2")
     name.textContent = ramen.name
@@ -74,6 +74,7 @@ sec.style.textAlign = 'center'
 
 function addSubmitListener(){
     const form = document.getElementById("new-ramen")
+    form.style.justifyContent = "center"
     form.addEventListener('submit', handleFormSubmit)
 }
 
