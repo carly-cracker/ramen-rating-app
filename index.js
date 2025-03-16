@@ -68,7 +68,22 @@ sec.style.textAlign = 'center'
 
 function addSubmitListener(){
     const form = document.getElementById("new-ramen")
-    form.style.marginLeft = '500px'
+    form.addEventListener('submit', handleFormSubmit)
+}
+
+function handleFormSubmit(event){
+    event.preventDefault();
+
+    const foodName = document.getElementById('new-name').value
+    const restaurantName = document.getElementById('new-restaurant').value
+    const foodImage = document.getElementById('food-image').value
+    const rating =document.getElementById('food-rating').value
+    const comment =document.getElementById('food-comment').value
+
+    if(foodName && restaurantName && foodImage && rating && comment) {
+        addsRamenMenu(foodName, restaurantName, foodImage, rating, comment)
+        event.target.reset()
+    }
 }
 function main() {
     displayRamens(),
