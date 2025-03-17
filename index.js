@@ -2,13 +2,16 @@ document.addEventListener("DOMContentLoaded", main)
 const ramens = [
     { id: 1, name: "Shoyu Ramen", restaurant: "Ichiran", image: "shoyu.jpg", rating: 5, comment: "Delicious!" },
     { id: 2, name: "Miso Ramen", restaurant: "Menya", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGghgJ7esaJXoexEm6ZByIDnmz_K5Uz3bTgQ&s", rating: 4, comment: "Very flavorful!" },
-    { id: 3, name: "Tonkotsu Ramen", restaurant: "Ramen-ya", image: "gyukotsu.jpg" }
+    { id: 3, name: "Tonkotsu Ramen", restaurant: "Ramen-ya", image: "gyukotsu.jpg" },
+    { id: 4, name: "Kojiro Ramen",  restaurant:  "Pronto", image: "kojiro.jpg", rating: 4, comment: "finger licking"},
+    { id: 5, name: "Nirvana Ramen",  restaurant:  "Sarova", image: "nirvana.jpg", rating: 5, comment: "tasty"}
  ];
  const first = document.getElementById('top')
 console.log(first)
 first.style.color = 'white'
 first.style.backgroundColor = 'black'
 first.style.textAlign = 'center'
+first.style.margin = "0px"
 
 function displayRamens() {
     const menu = document.querySelector("#ramen-menu")
@@ -38,9 +41,6 @@ function addRamenToMenu(ramen){
 function handleClick(ramen) {
     const detailDiv = document.querySelector("#ramen-detail");
     detailDiv.innerHTML = "";
-    detailDiv.style.justifyContent = "center";
-    detailDiv.style.marginLeft = "500px"
-
     
     const img = document.createElement("img")
     img.src = ramen.image;
