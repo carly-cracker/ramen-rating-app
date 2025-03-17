@@ -104,6 +104,12 @@ function addsRamenMenu(foodName, restaurantName, foodImage, rating, comment) {
   ramens.push(newRamen);
   addRamenToMenu(newRamen)
 }
+const seced = document.getElementById("sectioned-ramen")
+seced.style.margin = "20px auto"
+seced.style.padding = "15px"
+seced.style.borderRadius = "40px"
+seced.style.backgroundColor = "rgb(236, 236, 213)"
+seced.style.maxWidth = "400px"
 function main() {
     displayRamens(),
     addSubmitListener()
