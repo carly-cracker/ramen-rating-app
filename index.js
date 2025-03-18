@@ -31,6 +31,7 @@ function addRamenToMenu(ramen){
         img.style.height = "200px"
         img.style.display = "inline-block"
         img.style.display = "pointer"
+        img.style.padding = "10px";
 
         img.addEventListener("click", () => handleClick(ramen));
 
