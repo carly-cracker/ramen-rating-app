@@ -35,7 +35,7 @@ function addRamenToMenu(ramen){
 
         img.addEventListener("click", () => handleClick(ramen));
 
-
+        
         menu.appendChild(img); 
     }
 
